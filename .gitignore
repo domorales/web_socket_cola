@@ -1,0 +1,3 @@
+distBackend/
+node_modules/
+.env
