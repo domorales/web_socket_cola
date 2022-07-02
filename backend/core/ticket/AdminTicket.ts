@@ -62,7 +62,7 @@ export default class AdminTicket {
 		this.save();
 		return ticket;
 	}
-	public getlastPosition() {
+	public getLastPosition() {
 		return this.lastPosition;
 	}
 

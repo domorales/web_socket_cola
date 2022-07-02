@@ -1,11 +1,12 @@
 import { Socket } from 'socket.io';
+
 import AdminTicket from '../core/ticket/AdminTicket';
 
 const adminTicket = new AdminTicket();
 const socketTicketController = (socket: Socket) => {
 	console.log('cliente conectado');
-
-	socket.emit('last_number_ticket', adminTicket.getlastPosition());
+	1;
+	socket.emit('last_number_ticket', adminTicket.getLastPosition());
 	socket.emit('last_four_tickets', adminTicket.ticketsToJson().lastFourTickets);
 	socket.emit('queue_tickets_pendent', adminTicket.sizeListTicketPendent());
 
